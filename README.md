@@ -40,7 +40,9 @@ cd ~/ros2_ws/src
 ```
 
 - 克隆仓库
+```bash
 git clone https://github.com/hehao3230/SystemStatusTool.git
+```
 
 - 编译
 ```bash
@@ -54,6 +56,7 @@ source install/setup.bash
 ros2 run system_status_tool status_publisher
 ros2 run system_status_tool status_gui
 ```
+
 - 查看话题数据
 ```bash
 ros2 topic echo /sys_status
