@@ -31,7 +31,7 @@ class SysStatusPub(Node):
 
 def main():
     rclpy.init()
-    node = SysStatusPub("sys_status")
+    node = SysStatusPub("sys_status_node")
     rclpy.spin(node)
     rclpy.shutdown()
 

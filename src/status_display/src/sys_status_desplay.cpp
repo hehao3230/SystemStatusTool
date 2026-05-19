@@ -179,7 +179,7 @@ int main(int argc, char *argv[])
     rclcpp::init(argc, argv);
     QApplication app(argc, argv);
 
-    auto node = std::make_shared<SysStatusDisplay>("status_display");
+    auto node = std::make_shared<SysStatusDisplay>("status_display_node");
 
     std::thread spin_thread([node]() {
         rclcpp::spin(node);

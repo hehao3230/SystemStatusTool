@@ -63,11 +63,11 @@ ros2 topic echo /sys_status
 ```
 
 ## 节点说明
-- status_publisher
+- sys_status_node
 采集系统指标（CPU、内存、网络），以固定频率（例如 20 Hz）发布 SystemStatus 消息到 /sys_status 话题。
 读取主机名、/proc/stat 计算 CPU 使用率、/proc/meminfo 获取内存信息、/proc/net/dev 获取网络累计流量。
 
-- status_gui
+- status_display_node
 继承 rclcpp::Node 并内嵌 Qt 主窗口。
 订阅 /sys_status，通过 QMetaObject::invokeMethod 将 UI 更新投递到 Qt 主线程。
 显示主机名、时间戳、CPU 使用率（含进度条）、内存总量/剩余/使用率（含进度条）、网络收发累计流量。
