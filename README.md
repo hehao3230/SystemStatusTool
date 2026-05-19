@@ -16,7 +16,6 @@
 
 `msg/SystemStatus.msg`
 
-```msg
 builtin_interfaces/Time timestamp
 string host_name
 float32 cpu_percent
@@ -26,13 +25,14 @@ float32 memory_available  # 单位 MB
 float64 net_sent          # 累计发送字节数
 float64 net_recv          # 累计接收字节数
 
+
 ## 依赖
 - Ubuntu 22.04
 - ROS2 Humble
 - Qt5 (>= 5.12)
 - colcon, cmake, g++
 
-##编译与运行
+## 编译与运行
 - 创建工作空间
 mkdir -p ~/ros2_ws/src
 cd ~/ros2_ws/src
