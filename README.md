@@ -34,22 +34,30 @@ float64 net_recv          # 累计接收字节数
 
 ## 编译与运行
 - 创建工作空间
+```bash
 mkdir -p ~/ros2_ws/src
 cd ~/ros2_ws/src
+```
 
 - 克隆仓库
 git clone https://github.com/hehao3230/SystemStatusTool.git
 
 - 编译
+```bash
 cd ~/ros2_ws
 colcon build --packages-select system_status_tool
 source install/setup.bash
+```
 
 - 运行
+```bash
 ros2 run system_status_tool status_publisher
 ros2 run system_status_tool status_gui
+```
 - 查看话题数据
+```bash
 ros2 topic echo /sys_status
+```
 
 ## 节点说明
 - status_publisher
